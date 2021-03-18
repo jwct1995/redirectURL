@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Title</title>
+
+
+</head>
+<body>
+
+<center>
+	URL : <textarea id="txta" style="height:18px; width:400px;"></textarea>
+	<br>
+	<input id="inpB" type="button" value="click to redirect to the link">
+</center>
+
+<br>
+<br>
+Demo :
+<a href="http://jwct95.freevar.com/code/Code-ClickToRedirect.html">http://jwct95.freevar.com/code/Code-ClickToRedirect.html</a>
+<script>
+
+$(document).ready(function()
+{
+	$("#inpB").click(function()
+	{
+		var txturl=$("#txta").val();
+		location.href = txturl;
+	});
+
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Title</title>
+
+</head>
+<body>
+<center>
+	<div id="divt"></div>
+</center>
+
+	<br>
+	<br>
+	Demo :
+	<a href="http://jwct95.freevar.com/code/Code-AutoRedirectWithCountDown.html">http://jwct95.freevar.com/code/Code-AutoRedirectWithCountDown.html</a>
+
+<script>
+
+
+
+var x=0;
+const interval = setInterval(function()
+{
+	var c=5-x;
+	$("#divt").html("After "+c+" second will auto move to <br><a href='https://www.google.com/'>Google.com</a>");
+	if (x >= 5)
+	{
+		clearInterval(x);
+		location.href = "https://www.google.com/";
+	}
+	x++;
+
+}, 1000);
+/*
+var x = setInterval(function()
+{
+	$("#aa").text(x);
+	if (x >= 5)
+	{
+		$("#aa").text("done");
+		clearInterval(x);
+		$("#aa").text("done1");
+		//document.getElementById("demo").innerHTML = "EXPIRED";
+	}
+}, 1000);*/
+
+</script>
+</body>
+</html>
